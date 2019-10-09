@@ -5,10 +5,8 @@ verify_ssl = true
 
 [dev-packages]
 robotframework = "*"
-selenium2library = "*"
 robotframework-selenium2library = "*"
 robotframework-seleniumlibrary = "*"
-robotframework-selenium = "*"
 v = {editable = true,version = "*"}
 
 [packages]

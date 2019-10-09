@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "471cde5920bcf7af2915fd2843b62852c8f17491dc5d67aa70ec5d4a66929203"
+            "sha256": "46b0635e25e0275da7e7437f54354892318451368b591ffb0758e2fa3c134c76"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -24,6 +24,44 @@
             ],
             "index": "pypi",
             "version": "==3.1.2"
+        },
+        "robotframework-selenium2library": {
+            "hashes": [
+                "sha256:1826b1ce8ccac76f14c4812e2d6df79f52ecda8a3c59c427eea45548c2e22cb1",
+                "sha256:2a8e942b0788b16ded253039008b34d2b46199283461b294f0f41a579c70fda7"
+            ],
+            "index": "pypi",
+            "version": "==3.0.0"
+        },
+        "robotframework-seleniumlibrary": {
+            "hashes": [
+                "sha256:a302e493ab6975d9d3886d20ce67399d4ed4712260cee075655a29584bb60906",
+                "sha256:fd601ce4937b4ceb77323a4ee658791dec2f85a6d21c7143d00515db68afb64a"
+            ],
+            "index": "pypi",
+            "version": "==4.0.0"
+        },
+        "selenium": {
+            "hashes": [
+                "sha256:2d7131d7bc5a5b99a2d9b04aaf2612c411b03b8ca1b1ee8d3de5845a9be2cb3c",
+                "sha256:deaf32b60ad91a4611b98d8002757f29e6f2c2d5fcaf202e1c9ad06d6772300d"
+            ],
+            "version": "==3.141.0"
+        },
+        "urllib3": {
+            "hashes": [
+                "sha256:3de946ffbed6e6746608990594d08faac602528ac7015ac28d33cee6a45b7398",
+                "sha256:9a107b99a5393caf59c7aa3c1249c16e6879447533d0887f4336dde834c7be86"
+            ],
+            "version": "==1.25.6"
+        },
+        "v": {
+            "hashes": [
+                "sha256:2d5a8f79a36aaebe62ef2c7068e3ec7f86656078202edabfdbf74715dc822d36",
+                "sha256:cd6b6b20b4a611f209c88bcdfb7211321f85662efb2bdd53a7b40314d0a84618"
+            ],
+            "index": "pypi",
+            "version": "==0.0.0"
         }
     }
 }
