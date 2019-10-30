@@ -1,10 +1,10 @@
 from selenium.webdriver.common.by import By
 
-import os
+import config
 
 
 class BasePage:
-    URL = 'https://www.' + os.getenv('ENV') + '.com'
+    URL = config.options.URL
 
 
 class SearchPage:

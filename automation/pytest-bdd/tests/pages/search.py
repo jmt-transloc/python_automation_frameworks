@@ -1,12 +1,13 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from pypom import Page
+from support.constants import SearchPage, BasePage
 
 
 class GoogleSearch(Page):
     test_var = 'Google Search'
-    _url = 'https://www.google.com'
-    _search_input = (By.NAME, 'q')
+    _url = BasePage.URL
+    _search_input = SearchPage.INPUT
     _search_button = (By.CSS_SELECTOR, f'[aria-label="{test_var}"]')
 
     def __init__(self, browser):

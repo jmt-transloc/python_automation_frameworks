@@ -1,10 +1,11 @@
 from selenium.webdriver.common.by import By
 from pypom import Page
+from support.constants import ResultsPage
 
 
 class GoogleResults(Page):
-    _result_divs = (By.CLASS_NAME, 'rc')
-    _search_field = (By.NAME, 'q')
+    _result_divs = ResultsPage.DIVS
+    _search_field = ResultsPage.INPUT
 
     def __init__(self, browser):
         super().__init__(browser)
