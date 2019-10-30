@@ -8,6 +8,7 @@ pytest = "*"
 pytest-bdd = "*"
 selenium = "*"
 pypom = "*"
+attrdict = "*"
 
 [packages]
 
