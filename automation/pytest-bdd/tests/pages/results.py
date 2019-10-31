@@ -1,11 +1,11 @@
 from selenium.webdriver.common.by import By
 from pypom import Page
-from support.constants import ResultsPage
+from support import constants
 
 
 class GoogleResults(Page):
-    _result_divs = ResultsPage.DIVS
-    _search_field = ResultsPage.INPUT
+    _result_divs = constants.RESULTS_PAGE.DIVS
+    _search_field = constants.RESULTS_PAGE.INPUT
 
     def __init__(self, browser):
         super().__init__(browser)
