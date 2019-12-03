@@ -1,9 +1,9 @@
-from tests.support import constants
+from tests.support.constants import ResultsPage
 
 
 class GoogleResultsPage:
-    _result_divs = constants.ResultsPage.DIVS
-    _search_field = constants.ResultsPage.INPUT
+    _result_divs = ResultsPage.DIVS
+    _search_field = ResultsPage.INPUT
 
     def __init__(self, browser):
         self.browser = browser

@@ -1,12 +1,12 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from tests.support import constants
+from tests.support.constants import SearchPage, BasePage
 
 
 class GoogleSearchPage:
     test_var = 'Google Search'
-    _url = constants.BasePage.URL
-    _search_input = constants.SearchPage.INPUT
+    _url = BasePage.URL
+    _search_input = SearchPage.INPUT
     _search_button = (By.CSS_SELECTOR, f'[aria-label="{test_var}"]')
 
     def __init__(self, browser):
