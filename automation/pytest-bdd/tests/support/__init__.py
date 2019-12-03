@@ -1,1 +1,1 @@
-from support.constants import _constants as constants
+from support.constants import Constants as Constants
