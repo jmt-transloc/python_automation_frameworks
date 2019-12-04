@@ -3,7 +3,7 @@ from tests.pages.results import GoogleResultsPage
 
 
 def test_refactored_browser_search(browser):
-    """Test search functionality"""
+    """ Test search functionality """
     phrase = 'Pandaren'
 
     search_page = GoogleSearchPage(browser)

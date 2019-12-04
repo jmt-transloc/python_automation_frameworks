@@ -26,7 +26,7 @@ class GoogleSearchPage:
     def search(self, phrase):
         """
         An input method for Google's search field
-        :param phrase: A search phrase (Untyped)
+        @param phrase - A search phrase (Untyped)
         """
         self.browser.find_element(*self._search_button)
         search_input = self.browser.find_element(*self._search_input)

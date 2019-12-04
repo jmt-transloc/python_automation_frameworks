@@ -1,8 +1,8 @@
 import json
 import pytest
+from selenium.webdriver import Chrome
 
 from tests.config import parse_env_variables, parse_json_variables, options
-from selenium.webdriver import Chrome
 
 CONFIG_PATH = 'tests/config.json'
 DEFAULT_WAIT_TIME = 10
@@ -52,12 +52,9 @@ def browser(config_browser, config_wait_time):
             f'"{config["browser"]}" is not a supported browser'
         )
 
-    # Define an implicit wait based on config
     driver.implicitly_wait(config_wait_time)
 
-    # Return a driver object for use in objects
     yield driver
 
-    # Quit the driver once tests are complete
     options.clear()
     driver.quit()
