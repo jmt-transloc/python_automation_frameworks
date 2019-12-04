@@ -15,21 +15,19 @@ parse_env_variables()
 parse_json_variables()
 
 
-#
-# Pull and return data from a configuration file
-#
 @pytest.fixture(scope='session')
 def config():
+    """ Pull and return data from a configuration file """
+
     with open(CONFIG_PATH) as config_file:
         data = json.load(config_file)
     return data
 
 
-#
-# Define a browser based on configuration files
-#
 @pytest.fixture(scope='session')
 def config_browser(config):
+    """ Define a browser based on configuration files """
+
     if 'browser' not in config:
         raise Exception('The configuration file does not contain "browser"')
     elif config['browser'] not in SUPPORTED_BROWSERS:
@@ -37,21 +35,16 @@ def config_browser(config):
     return config['browser']
 
 
-#
-# Define a wait time based on configuration files
-#
 @pytest.fixture(scope='session')
 def config_wait_time(config):
+    """ Define a wait time based on configuration files """
     return config['wait_time'] if 'wait_time' in config else DEFAULT_WAIT_TIME
 
 
-#
-# Create a browser and actions using config fixtures
-#
 @pytest.fixture
 def browser(config_browser, config_wait_time):
+    """ Create a browser and actions using config fixtures """
 
-    # Create a browser based on config
     if config_browser == 'chrome':
         driver = Chrome()
     else:
